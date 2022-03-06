@@ -14,6 +14,9 @@ public class ConverterDtoAnimalEntity {
 
     public Animal convertToEntity(AnimalDto animalDto) {
         Animal animalEntity = modelMapper.map(animalDto, Animal.class);
+        animalEntity.setHealth("brak informacji");
+        animalEntity.setRace("brak informacji");
+        animalEntity.setSex("brak informacji");
         return animalEntity;
     }
 }

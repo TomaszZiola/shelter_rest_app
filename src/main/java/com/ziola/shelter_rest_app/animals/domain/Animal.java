@@ -1,6 +1,7 @@
 package com.ziola.shelter_rest_app.animals.domain;
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name = "animal")
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class Animal {
